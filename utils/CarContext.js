@@ -11,7 +11,7 @@ export const useCar = () => useContext(CarContext);
 const randomNum = () => Math.floor(Math.random() * 20000);
 
 // Creating our car provider. Accepts an argument of `props`
-export default function CarProvider(props) {
+export default function CarProvider(props, store) {
   const cars = [
     {
       id: randomNum(),
@@ -29,6 +29,7 @@ export default function CarProvider(props) {
     },
   ];
 
-  // The provider component will wrap all other components inside of it that need access to our global state
-  return <CarContext.Provider value={{ cars }} {...props} />;
+  // The provider component will wrap all other components inside of 
+  // it that need access to our global state
+  return <CarContext.Provider value={{ cars }} {...props} {...store}/>;
 }
