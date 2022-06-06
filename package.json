@@ -1,0 +1,24 @@
+{
+  "name": "redux-refactor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderbennett/redux-refactor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderbennett/redux-refactor/issues"
+  },
+  "homepage": "https://github.com/coderbennett/redux-refactor#readme",
+  "dependencies": {
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
+  }
+}
